@@ -6,20 +6,26 @@ using namespace std;
 
 class ItemToPurchase{
     public:
-        ItemToPurchase();
+        ItemToPurchase(string iName, string iDescript, int iPrice, int iQuant);
         ~ItemToPurchase();
         void SetName(string itemDescription);
         void SetPrice(int itemPrice);
         void SetQuantity(int itemQuant);
+        void SetDescription(string iDescript);
+        void PrintItemCost();
+        void PrintItemDescription();
 
         string GetName() const;
         int GetPrice() const;
         int GetQuantity() const;
+        string GetDescription() const;
 
     private:
         string itemName;
-        int itemPrice;
-        int itemQuantity;
+        string itemDescription = none"";
+        int itemPrice = 0;
+        int itemQuantity = 0;
+
         
 };
 

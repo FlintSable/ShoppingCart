@@ -5,6 +5,13 @@
 using namespace std;
 
 class ItemToPurchase{
+
+    private:
+        string itemName;
+        string itemDescription = "none";
+        int itemPrice = 0;
+        int itemQuantity = 0;
+
     public:
         ItemToPurchase(string iName, string iDescript, int iPrice, int iQuant);
         ~ItemToPurchase();
@@ -19,12 +26,6 @@ class ItemToPurchase{
         int GetPrice() const;
         int GetQuantity() const;
         string GetDescription() const;
-
-    private:
-        string itemName;
-        string itemDescription = none"";
-        int itemPrice = 0;
-        int itemQuantity = 0;
 
         
 };

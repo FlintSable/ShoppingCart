@@ -4,7 +4,7 @@ using namespace std;
 #include "ItemToPurchase.h"
 
 // constructor/ deconstructor
-ItemToPurchase::ItemToPurchase(string iName = "none", string iDescript = "none", int iPrice = 0, int iQunat = 0){
+ItemToPurchase::ItemToPurchase(string iName = "none", string iDescript = "none", int iPrice = 0, int iQuant = 0){
     itemPrice = iPrice;
     itemQuantity = iQuant;
 }
@@ -46,11 +46,11 @@ string ItemToPurchase::GetDescription() const{
 }
 
 // Helper
-void ItemToPurchase::PrintCost() const{
+void ItemToPurchase::PrintItemCost() const{
     cout << itemName << " " 
             << itemQuantity << " @ $"
             << itemPrice << " = $"
-            << itemQuantity * itemCost << "\n";
+            << itemQuantity * itemPrice << "\n";
 }
 
 void ItemToPurchase::PrintItemDescription() const{

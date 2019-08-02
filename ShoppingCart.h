@@ -3,15 +3,16 @@
 
 #include <iostream>
 #include <vector>
+#include "ItemToPurchase.h"
 using namespace std;
 
 class ShoppingCart{
     ShoppingCart(string cartName, string cartDate);
     ~ShoppingCart();
     private:  
-        string customerName = "none"
-        string currentDate = "January 1,2016"
-        vector <ItemToPurchase> cartItems
+        string customerName = "none";
+        string currentDate = "January 1,2016";
+        vector <ItemToPurchase> cartItems;
     public:
         string GetCustomerName() const;
         string GetDate() const;
@@ -25,7 +26,6 @@ class ShoppingCart{
         void PrintTotal();
         void PrintDescription();
         
+};
 
-
-  
-}
+#endif

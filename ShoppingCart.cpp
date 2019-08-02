@@ -2,8 +2,8 @@
 #include <vector>
 using namespace std;
 
-#inlcude "ShoppingCart.h"
-
+#include "ShoppingCart.h"
+#include "ItemToPurchase.h"
 // constructor/ deconstructor
 ShoppingCart::ShoppingCart(string cartName = "none", string cartDate = "January 1,2016"){
     customerName = cartName;
@@ -13,28 +13,28 @@ ShoppingCart::ShoppingCart(string cartName = "none", string cartDate = "January 
 ShoppingCart::~ShoppingCart(){}
 
 // Accessors
-ShoppingCart::GetCustomerName() const{
+string ShoppingCart::GetCustomerName() const{
     return customerName;
 }
 
-ShoppingCart::GetDate() const{
+string ShoppingCart::GetDate() const{
     return currentDate;
 }
 
-ShoppingCart::GetNumItemsInCart() const{
-    return 0
+int ShoppingCart::GetNumItemsInCart() const{
+    return 0;
 }
 
-ShoppingCart::GetCostOfCart() const{
-    return 0
+int ShoppingCart::GetCostOfCart() const{
+    return 0;
 }
 
 // Mutators
-ShoppingCart::AddItem(ItemToPurchase newItem){}
-ShoppingCart::RemoveItem(ItemToPurchase removeItem){}
-ShoppingCart::ModifyItem(ItemToPurchase modifyItem){}
-ShoppingCart::PrintTotal(){}
-ShoppingCart::PrintDescripttion(){}
+void ShoppingCart::AddItem(ItemToPurchase newItem){}
+void ShoppingCart::RemoveItem(ItemToPurchase removeItem){}
+void ShoppingCart::ModifyItem(ItemToPurchase modifyItem){}
+void ShoppingCart::PrintTotal(){}
+void ShoppingCart::PrintDescription(){}
 
 
 

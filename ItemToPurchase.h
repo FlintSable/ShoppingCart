@@ -13,7 +13,7 @@ class ItemToPurchase{
         int itemQuantity = 0;
 
     public:
-        ItemToPurchase(string iName, string iDescript, int iPrice, int iQuant);
+        ItemToPurchase(string iName = "none", string iDescript = "none", int iPrice = 0, int iQuant = 0);
         ~ItemToPurchase();
         void SetName(string itemDescription);
         void SetPrice(int itemPrice);

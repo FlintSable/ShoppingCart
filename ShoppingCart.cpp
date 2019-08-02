@@ -5,7 +5,7 @@ using namespace std;
 #include "ShoppingCart.h"
 #include "ItemToPurchase.h"
 // constructor/ deconstructor
-ShoppingCart::ShoppingCart(string cartName = "none", string cartDate = "January 1,2016"){
+ShoppingCart::ShoppingCart(string cartName, string cartDate){
     customerName = cartName;
     currentDate = cartDate;
 }

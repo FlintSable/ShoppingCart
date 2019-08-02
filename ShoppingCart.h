@@ -7,7 +7,7 @@
 using namespace std;
 
 class ShoppingCart{
-    ShoppingCart(string cartName, string cartDate);
+    ShoppingCart(string cartName = "none", string cartDate = "January 1,2016");
     ~ShoppingCart();
     private:  
         string customerName = "none";

@@ -4,9 +4,12 @@ using namespace std;
 #include "ItemToPurchase.h"
 
 // constructor/ deconstructor
-ItemToPurchase::ItemToPurchase(string iName = "none", string iDescript = "none", int iPrice = 0, int iQuant = 0){
+ItemToPurchase::ItemToPurchase(string iName, string iDescript, int iPrice, int iQuant){
+    itemName = iName;
+    itemDescription = iDescript;
     itemPrice = iPrice;
     itemQuantity = iQuant;
+
 }
 
 ItemToPurchase::~ItemToPurchase(){}

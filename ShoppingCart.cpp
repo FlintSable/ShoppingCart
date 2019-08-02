@@ -4,6 +4,7 @@ using namespace std;
 
 #include "ShoppingCart.h"
 #include "ItemToPurchase.h"
+
 // constructor/ deconstructor
 ShoppingCart::ShoppingCart(string cartName, string cartDate){
     customerName = cartName;
@@ -33,10 +34,11 @@ int ShoppingCart::GetCostOfCart() const{
 void ShoppingCart::AddItem(ItemToPurchase newItem){}
 void ShoppingCart::RemoveItem(ItemToPurchase removeItem){}
 void ShoppingCart::ModifyItem(ItemToPurchase modifyItem){}
+
+
+// Helper
 void ShoppingCart::PrintTotal(){}
 void ShoppingCart::PrintDescription(){}
-
-
 
 
 

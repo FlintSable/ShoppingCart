@@ -14,8 +14,7 @@ class ShoppingCart{
         string currentDate = "January 1,2016";
         vector <ItemToPurchase> cartItems;
     public:
-        string GetCustomerName() const;
-        string GetDate() const;
+        string GetCutomerName() const;
         int GetNumItemsInCart() const;
         int GetCostOfCart() const;
 
